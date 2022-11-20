@@ -25,7 +25,7 @@ const HomePage = () => {
           alert("nay!");
         }}
         location="bottom"
-        buttonText="Sure man!!"
+        buttonText="Cool, I accept!"
         cookieName="myAwesomeCookieName3"
         style={{ background: "#2B373B" }}
         buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
