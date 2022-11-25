@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Navbar from '../components/navbar/Navbar'
+import ScrollToTop from 'react-scroll-up';
+import { FiChevronUp } from "react-icons/fi";
 import Services from '../components/services/Services'
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 
@@ -7,7 +9,7 @@ const HomePage = () => {
   console.log(getCookieConsentValue());
 
   return (
-    <div style={{height: "250vh", backgroundColor:"#cccccc"}}>
+    <Fragment style={{height: "250vh", backgroundColor:"#cccccc"}}>
       <Navbar />
       <Services />
       <CookieConsent
@@ -35,7 +37,13 @@ const HomePage = () => {
         This website uses cookies to enhance the user experience.{" "}
         <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
       </CookieConsent>
-    </div>
+
+      <div className="backto-top">
+        <ScrollToTop showUnder={160}>
+            <FiChevronUp />
+        </ScrollToTop>
+      </div>
+    </Fragment>
   )
 }
 

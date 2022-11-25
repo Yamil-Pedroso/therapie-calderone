@@ -6,8 +6,8 @@ const SlideList = [
       textPosition: 'text-center',
       category: '',
       title: 'THERAPIE CALDERONE',
-      description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-      buttonText: 'Contact Us',
+      description: 'Es gibt viele Variationen von Lorem Ipsum, aber die meisten sind verändert worden.',
+      buttonText: 'Kontakt',
       buttonLink: '/contact'
   }
 ]
