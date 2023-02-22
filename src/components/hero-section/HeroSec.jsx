@@ -6,7 +6,7 @@ const SlideList = [
       textPosition: 'text-center',
       category: '',
       title: 'THERAPIE CALDERONE',
-      description: 'Es gibt viele Variationen von Lorem Ipsum, aber die meisten sind verändert worden.',
+      description: 'Ich biete manuelle Lymphdrainage mit komplexer physikalischer Entstauungstherapie (KPE) an.',
       buttonText: 'Kontakt',
       buttonLink: '/contact'
   }

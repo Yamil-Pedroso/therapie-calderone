@@ -1,0 +1,14 @@
+.btn-flyer {
+    background-color: #00a9ba;
+    color: #fff;
+    border: none;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    &:hover {
+        background-color: #01565e;
+        color: #fff;
+        text-decoration: none;
+    }
+}

@@ -52,8 +52,8 @@ class Navbar extends Component {
                         <div className="header-left">
                             <div className="logo">
                                 <a href="/">
-                                    <img className="logo-1" src="/assets/images/logo/massage.png" alt="Calderone-Logo"/>
-                                    <img className="logo-2" src="/assets/images/logo/massage.png" alt="Calderone-Logo"/>
+                                    <img className="logo-1" src="/assets/images/logo/massage3.png" alt="Calderone-Logo"/>
+                                    <img className="logo-2" src="/assets/images/logo/massage3.png" alt="Calderone-Logo"/>
                                 </a>
                             </div>
                         </div>

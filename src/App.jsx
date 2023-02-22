@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './index.scss'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './screens/HomePage'

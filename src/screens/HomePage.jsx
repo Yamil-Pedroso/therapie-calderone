@@ -4,14 +4,22 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Services from '../components/services/Services'
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
+import About from '../components/about/About'
+import Media from '../components/media/Media'
+import Contact from '../components/contact/Contact'
+import Footer from '../components/footer/Footer'
 
 const HomePage = () => {
   console.log(getCookieConsentValue());
 
   return (
-    <Fragment style={{height: "250vh", backgroundColor:"#cccccc"}}>
+    <Fragment>
       <Navbar />
+      <About />
       <Services />
+      <Media />
+      <Contact />
+      <Footer />
       <CookieConsent
         onAccept={(acceptedByScrolling) => {
           if (acceptedByScrolling) {
