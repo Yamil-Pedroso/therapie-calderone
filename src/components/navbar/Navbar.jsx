@@ -43,6 +43,7 @@ class Navbar extends Component {
                 }
             }
         }
+
      return (
         <Fragment>
             <Helmet pageTitle="Therapie Calderone"/>
@@ -59,12 +60,11 @@ class Navbar extends Component {
                         </div>
                         <div className="header-right">
                             <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={['home','Therapie', 'Angebot', 'Über mich', 'Kontakt']} currentClassName="is-current" offset={-200}>
+                                <Scrollspy className="mainmenu" items={ ['home', 'ubermich', 'angebot', 'kontakt'] } currentClassName="is-current" offset={ -200 }>
                                     <li><a href="#home">Home</a></li>
-                                    <li><a href="#service">Therapie</a></li>
-                                    <li><a href="#getstart">Angebot</a></li>
-                                    <li><a href="#about">Über mich</a></li>
-                                    <li><a href="#team">Kontakt</a></li>
+                                    <li><a href="#ubermich">Über mich</a></li>
+                                    <li><a href="#angebot" >Angebot</a></li>
+                                    <li><a href="#kontakt">Kontakt</a></li>
                                 </Scrollspy>
                             </nav>
                             {/* Start Humberger Menu  */}

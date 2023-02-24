@@ -4,6 +4,13 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { FaPlay } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
+import { BiLinkExternal } from 'react-icons/bi';
+
+const linkAcpBtn = {
+  text: 'ACP Flyer',
+  link: '/assets/docs/flyer-acp.pdf'
+}
 
 function MyVideo(props) {
   return (
@@ -38,23 +45,7 @@ function App() {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <div className=""
-      style={{
-              display: "flex",
-              flexDirection:"column",
-              justifyContent:"center",
-              alignItems:"center",
-              width: "40rem",
-              height: "30rem",
-              background:"#bdbac1",
-              borderRadius: "0.5rem",
-              backgroundImage: "url(/assets/images/bg/claudia-1.jpeg)"
-        }}
-      >
-       <h2 className="" style={{fontSize: "3.5em", color:"#fff"}}>
-        Erfahren mehr über
-       </h2>
-         <h4 style={{color: "#fff"}}>ACP "Advanced Care Planning"</h4>
+    <div className="">
       <Button onClick={() => setModalShow(true)}
          style={{
            borderRadius:"50%",
@@ -64,7 +55,7 @@ function App() {
            border: "none",
           }}
         >
-        <FaPlay style={{fontSize: "1.8rem", color: "#fff", marginLeft: "0.3rem"}} />
+        <FaPlay className="faplay-icon" style={{fontSize: "1.2rem", color: "#fff", marginLeft: "0.3rem"}} />
       </Button>
 
       <MyVideo
@@ -78,22 +69,40 @@ function App() {
 // popup modal video with usestate
 
 const Media = () => {
-
   return (
-    <Container style={{display: "flex", marginTop: "10rem" }}>
-       <div>
-         {App()}
-       </div>
-      <div style={{margin:"0 7rem"}}>
-        <h2 style={{fontSize: "2rem"}}>Advanced Care Planning</h2>
-        <p style={{fontSize: "1.2rem", color: "#6c757d"}}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-          nunc eu nisl ultrices, nec ultricies nisl aliquam. Nullam euismod
-          tincidunt nisl, sit amet aliquam nisl. Nulla facilisi. Nulla
-          facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla
-        </p>
+    <div className="planning-container">
+      <p className='acp-title'>Advanced Care Planning</p>
+      <div className="acp-container">
+        <div className="info-wrapper">
+          <div className="acp-wrapper">
+            <h2>ACP<span> Swiss</span></h2>
+            <div className="line2"></div>
+            <p>
+            Die Patientenverfügung plus (PV plus) richtet sich an alle Menschen, die für Situationen der Urteilsunfähigkeit selbstbestimmt     vorsorgen und vorausplanen möchten.
+            ACP= Advance Care Planning, die gesundheitliche Vorausplanung
+
+            Die Beratung findet je nach Situation an 1-3 ca. einstündigen Gesprächs-Treffen statt. Nach dem Erstellen einer   Standortbestimmung   werden die Therapieziele festgelegt und weitere Behandlungswünsche erfasst.
+            </p>
+          </div>
+          <div className="opt-info">
+             <div className="acp-link">
+                <Link to={linkAcpBtn.link} target="_blank" rel="noopener noreferrer" className="acp-btn">{linkAcpBtn.text}</Link>
+             </div>
+             <a href="https://www.acp-swiss.ch/" target="_blank" rel="noopener noreferrer" className="ext-link">
+               ACP Swiss <BiLinkExternal className="link-icon" />
+             </a>
+             <a href="https://zuerich.krebsliga.ch/" target="_blank" rel="noopener noreferrer" className="ext-link">
+               Krebsliga Zürich <BiLinkExternal className="link-icon" />
+             </a>
+          </div>
+        </div>
+        <div className="care-img">
+          <div className="media-play">
+            {App()}
+          </div>
+        </div>
       </div>
-    </Container>
+    </div>
   )
 }
 

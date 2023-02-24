@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import Avatar from '/assets/images/bg/avatar.png'
 
 const contact = {
   title: 'KONTAKT',
@@ -10,17 +10,18 @@ const contact = {
 
 const Contact = () => {
   return (
-    <Container style={{textAlign:'center', marginTop: "5rem"}}>
-        <Row>
-          <Col>
-            <h2>{contact.title}</h2>
-            <h3>Telefon: <a href="tel:+41795238157" target="_blank">{contact.tel}</a></h3>
-            {/* emailto*/}
-            <h3 style={{cursor: "pointer"}}>Email: <a href="mailto:claudia.calderone@gmx.ch" target="_blank">{contact.email}</a></h3>
-            <h3>Adresse: {contact.address}</h3>
-          </Col>
-        </Row>
-    </Container>
+    <div className="contact-container" data-black-overlay="2">
+      <div className="right-contact">
+      <div className="avatar">
+        <img src={Avatar} alt="avatar" className="avatar-img" />
+      </div>
+        <h3>{contact.title}</h3>
+        <h3>Telefon: <a href="tel:+41795238157" target="_blank">{contact.tel}</a></h3>
+        {/* emailto*/}
+        <h3 style={{cursor: "pointer"}}>Email: <a href="mailto:claudia.calderone@gmx.ch" target="_blank">{contact.email}</a></h3>
+        <h3>Adresse: {contact.address}</h3>
+      </div>
+    </div>
   )
 }
 
