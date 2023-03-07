@@ -1,15 +1,15 @@
-import React ,{ Component, Fragment }from "react";
+import React ,{ Component }from "react";
 class TherapyServices extends Component{
     render(){
 
         return(
-            <Fragment>
+            <>
                 <div className="therapy-services">
                     <div className="m-lymph">
                         <h3>Manuelle Lymphdrainage MLD mit KPE</h3>
-                        <p>
+                        <li className="parag">
                           Die manuelle Lymphdrainage(MLD) ist eine sanfte Therapieform. Mit speziellen Handgriffen werden die   Lymphgefässe angeregt und es entsteht ein besserer Rücktransport. Wasseransammlungen(Ödeme) werden   abtransportiert.
-                        </p>
+                        </li>
                     </div>
                     <div className="mld">
                         <ul>
@@ -28,7 +28,7 @@ class TherapyServices extends Component{
                         </ul>
                     </div>
                 </div>
-            </Fragment>
+            </>
         )
     }
 }

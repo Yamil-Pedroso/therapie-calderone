@@ -1,4 +1,5 @@
 import React from 'react'
+import Scrollspy from 'react-scrollspy';
 
 
 const SlideList = [
@@ -8,13 +9,12 @@ const SlideList = [
       title: 'THERAPIE CALDERONE',
       description: 'Ich biete manuelle Lymphdrainage mit komplexer physikalischer Entstauungstherapie (KPE) an.',
       buttonText: 'Kontakt',
-      buttonLink: '/contact'
   }
 ]
 
 const HeroSec = () => {
   return (
-    <div>
+    <>
          {/* Start Slider Area   */}
          <div className="slider-activation slider-creative-agency" id="home">
                     <div className="bg_image bg_image--1" data-black-overlay="4">
@@ -27,7 +27,11 @@ const HeroSec = () => {
                                                 {value.category ? <span>{value.category}</span> : ''}
                                                 {value.title ? <h1 className="title" style={{color: "#77cbcc"}}>{value.title}</h1> : ''}
                                                 {value.description ? <p className="description">{value.description}</p> : ''}
-                                                {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
+                                                {value.buttonText ? <div className="slide-btn">
+                                                   <Scrollspy items={['kontakt']} currentClassName="is-current" offset={ -200 }>
+                                                     <a href="#kontakt" className="rn-button-style--2 btn-primary-color">{value.buttonText}</a>
+                                                    </Scrollspy>
+                                                </div> : ''}
                                             </div>
                                         </div>
                                     </div>
@@ -37,7 +41,7 @@ const HeroSec = () => {
                     </div>
                 </div>
                 {/* End Slider Area   */}
-    </div>
+    </>
   )
 }
 

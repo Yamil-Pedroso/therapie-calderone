@@ -47,15 +47,9 @@ function App() {
   return (
     <div className="">
       <Button onClick={() => setModalShow(true)}
-         style={{
-           borderRadius:"50%",
-           width: "6rem",
-           height:"6rem",
-           backgroundColor: "#00a9ba",
-           border: "none",
-          }}
+         className="play-btn"
         >
-        <FaPlay className="faplay-icon" style={{fontSize: "1.2rem", color: "#fff", marginLeft: "0.3rem"}} />
+        <FaPlay className="faplay-icon" />
       </Button>
 
       <MyVideo
@@ -70,8 +64,8 @@ function App() {
 
 const Media = () => {
   return (
-    <div className="planning-container">
-      <p className='acp-title'>Advanced Care Planning</p>
+    <div className="planning-container" id="therapie">
+      <h3 className='acp-title'>Advanced Care Planning</h3>
       <div className="acp-container">
         <div className="info-wrapper">
           <div className="acp-wrapper">
@@ -90,9 +84,6 @@ const Media = () => {
              </div>
              <a href="https://www.acp-swiss.ch/" target="_blank" rel="noopener noreferrer" className="ext-link">
                ACP Swiss <BiLinkExternal className="link-icon" />
-             </a>
-             <a href="https://zuerich.krebsliga.ch/" target="_blank" rel="noopener noreferrer" className="ext-link">
-               Krebsliga Zürich <BiLinkExternal className="link-icon" />
              </a>
           </div>
         </div>

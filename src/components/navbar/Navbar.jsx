@@ -24,6 +24,7 @@ class Navbar extends Component {
     }
     stickyHeader () {}
 
+
     render() {
         window.addEventListener('scroll', function() {
             let value = window.scrollY;
@@ -45,7 +46,7 @@ class Navbar extends Component {
         }
 
      return (
-        <Fragment>
+        <>
             <Helmet pageTitle="Therapie Calderone"/>
            {/* Start Header Area  */}
            <header className="header-area formobile-menu header--fixed default-color">
@@ -60,10 +61,11 @@ class Navbar extends Component {
                         </div>
                         <div className="header-right">
                             <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={ ['home', 'ubermich', 'angebot', 'kontakt'] } currentClassName="is-current" offset={ -200 }>
+                                <Scrollspy className="mainmenu" items={ ['home', 'ubermich', 'angebot','therapie', 'kontakt'] } currentClassName="is-current" offset={ -200 }>
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#ubermich">Über mich</a></li>
                                     <li><a href="#angebot" >Angebot</a></li>
+                                    <li><a href="#therapie" >Therapie</a></li>
                                     <li><a href="#kontakt">Kontakt</a></li>
                                 </Scrollspy>
                             </nav>
@@ -80,7 +82,7 @@ class Navbar extends Component {
                 </header>
                 {/* End Header Area  */}
                 <HeroSec />
-      </Fragment>
+      </>
    )
  }
 }

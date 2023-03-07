@@ -1,57 +1,33 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Services from '../components/services/Services'
-import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import About from '../components/about/About'
 import Media from '../components/media/Media'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
+import Cookies from '../components/cookies/MyCookies'
+
+setTimeout(() => {console.log("this is the first message")}, 5000);
 
 const HomePage = () => {
-  console.log(getCookieConsentValue());
 
   return (
-    <Fragment>
+    <div style={{positon: "relative"}}>
       <Navbar />
       <About />
       <Services />
       <Media />
       <Contact />
       <Footer />
-      <CookieConsent
-        onAccept={(acceptedByScrolling) => {
-          if (acceptedByScrolling) {
-            // triggered if user scrolls past threshold
-            alert("Accept was triggered by user scrolling");
-          } else {
-            alert("Accept was triggered by clicking the Accept button");
-          }
-        }}
-
-        enableDeclineButton
-        onDecline={() => {
-          alert("nay!");
-        }}
-        location="bottom"
-        buttonText="Cool, I accept!"
-        cookieName="myAwesomeCookieName3"
-        style={{ background: "#2B373B" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-        expires={150}
-        overlay
-      >
-        This website uses cookies to enhance the user experience.{" "}
-        <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
-      </CookieConsent>
-
+      <Cookies />
       <div className="backto-top">
         <ScrollToTop showUnder={160}>
             <FiChevronUp />
         </ScrollToTop>
       </div>
-    </Fragment>
+    </div>
   )
 }
 

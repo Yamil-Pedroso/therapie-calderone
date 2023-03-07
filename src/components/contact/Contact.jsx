@@ -10,7 +10,7 @@ const contact = {
 
 const Contact = () => {
   return (
-    <div className="contact-container" data-black-overlay="2">
+    <div className="contact-container" data-black-overlay="2" id="kontakt">
       <div className="right-contact">
       <div className="avatar">
         <img src={Avatar} alt="avatar" className="avatar-img" />

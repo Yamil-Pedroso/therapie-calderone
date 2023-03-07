@@ -17,8 +17,11 @@ const linkBtn = {
 
 const About = () => {
   return (
-    <Container style={{marginTop:"10rem"}}>
-        <Row>
+    <Container style={{marginTop:"10rem"}} id="ubermich">
+        <Row className="about-wrapper">
+          <Col>
+            <img src={Claudia} alt="Claudia Calderone" style={{width:"100%"}}/>
+          </Col>
           <Col>
             <Col>
               <div>
@@ -35,11 +38,8 @@ const About = () => {
                 <strong>Erfahrung:</strong> {about.experience}
               </p>
 
-              <Link to={linkBtn.link} target="_blank" className="btn btn-flyer">{linkBtn.text}</Link>
+              <Link to={linkBtn.link} target="_blank" className="btn btn-flyer"><p>{linkBtn.text}</p></Link>
             </Col>
-          </Col>
-          <Col>
-            <img src={Claudia} alt="Claudia Calderone" style={{width:"100%"}}/>
           </Col>
         </Row>
     </Container>

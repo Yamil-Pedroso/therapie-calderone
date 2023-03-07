@@ -1,0 +1,119 @@
+import React, { useState, useEffect } from 'react'
+import CookieConsent, { Cookies } from "react-cookie-consent";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import { CSSTransition } from 'react-transition-group';
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
+function App() {
+  const [modalShow, setModalShow] = React.useState(false);
+
+  return (
+    <>
+      <Button variant="primary" onClick={() => setModalShow(true)}>
+        Launch vertically centered modal
+      </Button>
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
+  );
+}
+
+const MyCookies = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 4000);
+  }, []);
+
+  return (
+    <>
+       {show && (
+        <CookieConsent
+        enableDeclineButton
+        declineButtonText="Decline"
+        declineButtonStyle={{
+          color: "#d6d6d6",
+          background: "#822424",
+          borderRadius: "0.2rem",
+          padding: "0.5rem 1rem",
+          fontWeight: "bold",
+          fontSize: "1.2rem",
+        }}
+        onDecline={() => {
+          Cookies.remove("myAwesomeCookieName3");
+        }}
+        location="bottom"
+        buttonText="Cool, I accept!"
+        cookieName="myAwesomeCookieName3"
+        style={{
+          background: "#d7d7d7",
+          width: "30vw",
+          height:"35vh",
+          borderRadius: "0.5rem",
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: "9999",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        buttonStyle={{
+          color: "#eaeaea",
+          background: "#00a9ba",
+          borderRadius: "0.2rem",
+          padding: "0.5rem 1rem",
+          fontWeight: "bold",
+          fontSize: "1.2rem",
+         }}
+        expires={150}
+        overlay
+        visible="byCookieValue"
+      >
+        <div style={{display:"flex", flexDirection: "column", justifyContent:"center", alignItems:"center"}}>
+          <h5 style={{textAlign: "center", color:"#3e3e3e"}}>Diese Website verwendet Cookies, um die Benutzerfreundlichkeit zu verbessern.</h5>
+          <div style={{width:"8vw", height:"8vw", borderRadius:"50%"}}>
+            <img src="/assets/images/cookies-img.png" alt="cookies" style={{width:"100%", height:"100%", borderRadius:"50%", marginTop:"0.7rem"}}/>
+          </div>
+        </div>
+      </CookieConsent>
+      )}
+    </>
+  )
+}
+
+export default MyCookies

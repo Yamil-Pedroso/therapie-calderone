@@ -42,3 +42,27 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1200px) {
+    .contact-container {
+        margin-top: 5rem;
+        padding: 2rem;
+        height: auto;
+    }
+}
+@media screen and (max-width: 960px) {
+    .contact-container h3 {
+        font-size: 1.5rem;
+    }
+    .contact-container h3 a {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 775px) {
+    .contact-container h3 {
+        font-size: 1rem;
+    }
+    .contact-container h3 a {
+        font-size: 1rem;
+    }
+}

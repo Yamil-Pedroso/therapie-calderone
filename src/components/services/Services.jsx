@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import TherapyServices from './ServiceList'
 
 const ServiceImages = [
@@ -19,24 +19,24 @@ class Services extends Component {
     const ServiceImg = ServiceImages.slice(0 , this.props.item);
 
     return (
-      <Fragment>
-        <div className="main-container">
+      <>
+        <div className="main-container" id="angebot">
           <div className="service-container">
               <div className="header-title">
-                  <h2>Unsere Dienstleistungen</h2>
+                  <h2 className="service-title">Unsere Dienstleistungen</h2>
                   <p>Die Lymphdrainage ist eine spezielle Art der medizinischen Massage.</p>
               </div>
                <div className="therapy-img-wrapper">
                   {ServiceImg.map( (val , i) => (
-                      <div style={{margin: "0 20px"}} key={i}>
-                          <img src={val.image1} alt="Service Images" style={{width: "10rem", height:"10rem",borderRadius: "50%", backgroundImage:"cover", backgroundPosition:"center",  border:"4px solid #043053"}} />
+                      <div className="img-s-wrapper" key={i}>
+                          <img src={val.image1} alt="Service Images" className="img-service" />
                       </div>
                   ))}
                 </div>
           <TherapyServices />
           </div>
         </div>
-      </Fragment>
+      </>
     )
   }
 }
