@@ -49,6 +49,37 @@ function App() {
   );
 }
 
+const myStyles = {
+  background: "#d7d7d7",
+  borderRadius: "0.5rem",
+  zIndex: "9999",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}
+
+
+const btnDecline = {
+  color: "#d6d6d6",
+  background: "#243282",
+  borderRadius: "0.2rem",
+  padding: "0.5rem 1rem",
+  fontWeight: "bold",
+  fontSize: "1.2rem",
+  "@media screen (max-width: 960px)": {
+    background: "red",
+  }
+}
+
+const btnAccept = {
+  color: "#eaeaea",
+  background: "#127b85",
+  borderRadius: "0.2rem",
+  padding: "0.5rem 1rem",
+  fontWeight: "bold",
+  fontSize: "1.2rem",
+}
+
 const MyCookies = () => {
   const [show, setShow] = useState(false);
 
@@ -64,42 +95,17 @@ const MyCookies = () => {
         <CookieConsent
         enableDeclineButton
         declineButtonText="Decline"
-        declineButtonStyle={{
-          color: "#d6d6d6",
-          background: "#822424",
-          borderRadius: "0.2rem",
-          padding: "0.5rem 1rem",
-          fontWeight: "bold",
-          fontSize: "1.2rem",
-        }}
+        declineButtonStyle={btnDecline}
+        debug={true}
         onDecline={() => {
           Cookies.remove("myAwesomeCookieName3");
         }}
         location="bottom"
         buttonText="Cool, I accept!"
         cookieName="myAwesomeCookieName3"
-        style={{
-          background: "#d7d7d7",
-          width: "30vw",
-          height:"35vh",
-          borderRadius: "0.5rem",
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          zIndex: "9999",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        buttonStyle={{
-          color: "#eaeaea",
-          background: "#00a9ba",
-          borderRadius: "0.2rem",
-          padding: "0.5rem 1rem",
-          fontWeight: "bold",
-          fontSize: "1.2rem",
-         }}
+        className="cookieConsent"
+        style={myStyles}
+        buttonStyle={btnAccept}
         expires={150}
         overlay
         visible="byCookieValue"
