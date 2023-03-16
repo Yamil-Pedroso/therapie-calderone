@@ -1,0 +1,217 @@
+.kosten-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 75vw;
+    text-align: left;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.kosten-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #043052;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.kosten-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.k-list {
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.k-list h3 {
+    color: #00a9ba;
+    font-size: 1.9em;
+}
+
+.k-list li {
+  margin-bottom: 1rem;
+}
+
+.m-therapie li {
+  margin: 0;
+}
+
+.m-therapie li {
+  font-size: 1.3em;
+  margin-top: -15px;
+  color: #000;
+}
+.bar-twint {
+  margin-top: 1rem;
+}
+.bar-twint li {
+  margin: 0;
+  font-size: 1.3em;
+  color: #000;
+}
+
+.m-lymph {
+    margin-top: 1rem;
+    font-size: 1.3em;
+  color: #000;
+}
+
+.infor {
+    margin-top: 1rem;
+    font-size: 1.3em;
+    color: #000;
+}
+
+.selbs-price {
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.selbs-price span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.selbs-price li {
+  margin-top: 16px;
+  margin-left: 10px;
+  color: #000;
+}
+
+.acp-beratung li {
+    margin-top: -15px;
+    font-size: 1.3em;
+    color: #000;
+}
+
+.massage-img-wrapper {
+  width: 32%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.massage-img {
+  height: auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .kosten-title {
+    font-size: 2.6rem;
+  }
+
+  .kosten-container {
+    width: 80vw;
+  }
+
+  .kosten-wrapper {
+    width: 60vw;
+  }
+
+  .k-list {
+    font-size: .7rem;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .kosten-title {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+  }
+
+  .kosten-container {
+    margin-top: 2rem;
+  }
+
+  .kosten-wrapper {
+    width: 50vw;
+  }
+
+  .k-list {
+    font-size: .6rem;
+  }
+
+  .btn-kontakt {
+    padding: 10px 60px;
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .kosten-title {
+    font-size: 2.2rem;
+  }
+
+  .kosten-container {
+
+  }
+
+  .massage-img-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .kosten-wrapper {
+    width: 80vw;
+  }
+
+  .k-list {
+    font-size: .6rem;
+  }
+
+  .btn-kontakt {
+    padding: 10px 60px;
+    font-size: .7rem;
+  }
+
+  .selbs-price {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kosten-title {
+    font-size: 2rem;
+  }
+
+  .kosten-container {
+    width: 90vw;
+  }
+
+ .selbs-price li {
+    margin: 0;
+  }
+  .selbs-price span {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .kosten-title {
+    font-size: 1.8rem;
+  }
+
+  .kosten-container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .kosten-title {
+    font-size: 1.6rem;
+  }
+
+  .kosten-container {
+    width: 90vw;
+  }
+}

@@ -115,9 +115,56 @@
     margin-left: 0.3rem;
 }
 
+.modal-wrapper {
+    background-color: #043053;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    overflow: hidden;
+}
+
+.header-acp-wrapper p {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.modal-container {
+    position: relative;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.video-screen {
+    width: 720px;
+    height: 640px;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+
+.close-wrapper {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.close-icon {
+    font-size: 1.8rem;
+    margin-left: 0.3rem;
+}
+
 @media screen and (max-width: 1200px) {
     .planning-container {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .acp-container {
         flex-direction: column;
@@ -127,6 +174,7 @@
 
     .acp-title {
       font-size: 2rem;
+      margin-top: 4rem;
     }
 
     .info-wrapper {
@@ -148,12 +196,33 @@
         transform: translate(-50%, -50%);
         cursor: pointer;
     }
+
+    .acp-wrapper h2, .acp-wrapper span {
+        font-size: 1.5rem;
+    }
+
+    .acp-btn {
+        font-size: 1rem;
+        padding: 15px 25px;
+    }
+
+    .video-screen {
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 960px) {
     .acp-title {
         font-size: 1.8rem;
+        margin-top: 3rem;
       }
+
+    .acp-btn {
+        font-size: 1rem;
+        padding: 15px 25px;
+    }
     .play-btn {
         width: 4rem;
         height: 4rem;
@@ -161,5 +230,45 @@
 
     .faplay-icon {
         font-size: 1em;
+    }
+
+    .ext-link {
+        font-size: 1rem;
+    }
+
+    .close-icon {
+        font-size: 1.5rem;
+    }
+
+    .close-wrapper {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .acp-title {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+      }
+
+    .acp-btn {
+        font-size: .9rem;
+        padding: 10px 20px;
+    }
+
+    .acp-wrapper h2, .acp-wrapper span {
+        font-size: 1.2rem;
+    }
+
+    .ext-link {
+        font-size: .9rem;
+    }
+
+    .close-icon {
+        font-size: 1.2rem;
     }
 }

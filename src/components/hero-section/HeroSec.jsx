@@ -7,7 +7,7 @@ const SlideList = [
       textPosition: 'text-center',
       category: '',
       title: 'THERAPIE CALDERONE',
-      description: 'Ich biete manuelle Lymphdrainage mit komplexer physikalischer Entstauungstherapie (KPE) an.',
+      description: 'Es ist mir ein Anliegen auch jene Menschen behandeln und beraten zu können, welche kräftemässig den Weg in eine Praxis nicht mehr auf sich  nehmen können. Gerne berate oder behandle ich Sie bei Ihnen zu Hause, Domizil-behandlung.',
       buttonText: 'Kontakt',
   }
 ]

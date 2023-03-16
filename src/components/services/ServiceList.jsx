@@ -10,6 +10,17 @@ class TherapyServices extends Component{
                         <li className="parag">
                           Die manuelle Lymphdrainage(MLD) ist eine sanfte Therapieform. Mit speziellen Handgriffen werden die   Lymphgefässe angeregt und es entsteht ein besserer Rücktransport. Wasseransammlungen(Ödeme) werden   abtransportiert.
                         </li>
+                        <li className="parag2">
+                            Die manuelle Lymphdrainage ist Teil de komplexen physikalischen Entstauungstherapie(KPE).
+                            Diese besteht aus fünf Säulen:
+                        </li>
+                        <ul className="pillars">
+                            <li>Hautpflege</li>
+                            <li>MLD</li>
+                            <li>Kompression</li>
+                            <li>Bewegung</li>
+                            <li>Selbstmanagement</li>
+                        </ul>
                     </div>
                     <div className="mld">
                         <ul>

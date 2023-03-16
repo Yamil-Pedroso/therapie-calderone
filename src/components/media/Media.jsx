@@ -14,25 +14,25 @@ const linkAcpBtn = {
 
 function MyVideo(props) {
   return (
-    <div style={{ position: "relative"}}>
+    <div className="modal-container">
       <Modal
         {...props}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <div style={{backgroundColor: "#043053", display: "flex", flexDirection: "column",alignItems: "center", padding: "2.5rem"}}>
-          <div>
-             <p style={{fontSize: "2em", fontWeight: "600", color: "#fff"}}>Advanced Care Planning</p>
+        <div className="modal-wrapper">
+          <div className="header-acp-wrapper">
+             <p>Advanced Care Planning</p>
           </div>
-          <div>
-            <video width="720" height="640" controls>
+          <div className="video-wrapper">
+            <video className="video-screen" controls>
                 <source src="/assets/videos/Video.mp4" alt="Video" type="video/mp4" />
             </video>
           </div>
-          <div style={{ position: "absolute", right: "-30px", top: "-30px", zIndex: "1", cursor: "pointer" }}>
+          <div className="close-wrapper">
             <div onClick={props.onHide}>
-              <FaTimes style={{fontSize: "1.8rem", marginLeft: "0.3rem"}} />
+              <FaTimes className="close-icon" />
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ function App() {
 
 const Media = () => {
   return (
-    <div className="planning-container" id="therapie">
+    <div className="planning-container" id="acp">
       <h3 className='acp-title'>Advanced Care Planning</h3>
       <div className="acp-container">
         <div className="info-wrapper">

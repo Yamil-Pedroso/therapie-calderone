@@ -5,6 +5,7 @@ import { FiChevronUp } from "react-icons/fi";
 import Services from '../components/services/Services'
 import About from '../components/about/About'
 import Media from '../components/media/Media'
+import Kosten from '../components/kosten/Kosten'
 import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 import Cookies from '../components/cookies/MyCookies'
@@ -19,6 +20,7 @@ const HomePage = () => {
       <About />
       <Services />
       <Media />
+      <Kosten />
       <Contact />
       <Footer />
       <Cookies />

@@ -5,6 +5,8 @@ const contact = {
   title: 'KONTAKT',
   tel: '+41 79 523 81 57',
   email: 'claudia.calderone@gmx.ch',
+  dom_behandlung: 'Domizil Behandlung und Beratung',
+  days: 'Dienstag und Freitag ganzer Tag oder nach Ansprache',
   address: 'Stationstrasse 57, 8606 Nänikon'
 }
 
@@ -19,6 +21,10 @@ const Contact = () => {
         <h3>Telefon: <a href="tel:+41795238157" target="_blank">{contact.tel}</a></h3>
         {/* emailto*/}
         <h3 style={{cursor: "pointer"}}>Email: <a href="mailto:claudia.calderone@gmx.ch" target="_blank">{contact.email}</a></h3>
+        <ul className="dom-behandlung">
+          <li>{contact.dom_behandlung}</li>
+          <li>{contact.days}</li>
+        </ul>
         <h3>Adresse: {contact.address}</h3>
       </div>
     </div>

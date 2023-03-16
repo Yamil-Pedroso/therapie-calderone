@@ -61,11 +61,12 @@ class Navbar extends Component {
                         </div>
                         <div className="header-right">
                             <nav className="mainmenunav d-lg-block">
-                                <Scrollspy className="mainmenu" items={ ['home', 'ubermich', 'angebot','therapie', 'kontakt'] } currentClassName="is-current" offset={ -200 }>
+                                <Scrollspy className="mainmenu" items={ ['home', 'ubermich', 'angebot','acp', 'kosten', 'kontakt'] } currentClassName="is-current" offset={ -200 }>
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#ubermich">Über mich</a></li>
                                     <li><a href="#angebot" >Angebot</a></li>
-                                    <li><a href="#therapie" >Therapie</a></li>
+                                    <li><a href="#acp" >ACP</a></li>
+                                    <li><a href="#kosten">Kosten</a></li>
                                     <li><a href="#kontakt">Kontakt</a></li>
                                 </Scrollspy>
                             </nav>

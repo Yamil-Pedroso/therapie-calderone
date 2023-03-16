@@ -80,6 +80,7 @@ a {
         transition: 0.3s;
         @media #{$sm-layout} {
             padding: 9px 25px;
+            margin-right: 2.8rem;
         }
         &.rn-btn-dark {
             border: 2px solid #1f1f25;
