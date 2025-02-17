@@ -1,0 +1,282 @@
+.kosten-container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 75vw;
+    text-align: left;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .5s all ease-in-out;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.kosten-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00a9ba;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.kosten-wrapper {
+    display: flex;
+    flex-direction: column ;
+}
+
+.k-list {
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.k-list h3 {
+    color: #00a9ba;
+    font-size: 1.9em;
+}
+
+.k-list li {
+  margin-bottom: 1rem;
+}
+
+.m-therapie li {
+  margin: 0;
+}
+
+.m-therapie li {
+  font-size: 1.3em;
+  margin-top: -15px;
+  color: #000;
+}
+.bar-twint {
+  margin-top: 1rem;
+  list-style: block;
+}
+.bar-twint li {
+  margin: 0;
+  font-size: 1.3em;
+  color: #000;
+}
+
+.m-lymph {
+    margin-top: 1.25rem;
+    color: #000;
+  }
+
+  .m-lymph > li {
+    line-height: 1.375rem;
+    margin-top: 5px;
+    font-size: 1.3em;
+  }
+
+.infor {
+    font-size: 1.3em;
+    color: #000;
+}
+
+
+.selbs-price {
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.selbs-price span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.selbs-price li {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+}
+.acp-beratung {
+  margin-top: 2rem;
+}
+.acp-beratung li {
+    margin-top: -15px;
+    font-size: 1.3em;
+    color: #000;
+}
+
+.acp-beratung ul {
+  margin-top: 2rem;
+}
+
+.massage-img-wrapper {
+  width: 32%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.massage-img {
+  height: auto;
+}
+
+.emr-cer {
+  width: 100%;
+}
+
+.emr-cer li a h3 {
+  width: 12.8rem;
+  color: #00a9ba;
+  border-bottom: 5px solid #00a9ba;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1500px) {
+  .massage-img-wrapper {
+    display: block;
+    margin: 50px auto;
+    margin-right: 2rem;
+  }
+
+  .kosten-title {
+    font-size: 2.6rem;
+  }
+
+  .kosten-container {
+    width: 80vw;
+  }
+
+  .kosten-wrapper {
+    width: 60vw;
+  }
+
+  .k-list {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .massage-img-wrapper {
+    display: block;
+    margin: 80px auto;
+    margin-right: 2rem;
+  }
+
+  .kosten-title {
+    font-size: 2.4rem;
+    margin-top: 3rem;
+  }
+
+  .kosten-container {
+    margin-top: 2rem;
+  }
+
+  .kosten-wrapper {
+    width: 50vw;
+  }
+
+  .k-list {
+    font-size: 1em;
+  }
+
+  .btn-kontakt {
+    padding: 10px 60px;
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .kosten-title {
+    font-size: 2.2rem;
+  }
+
+
+  .massage-img-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .kosten-wrapper {
+    width: 80vw;
+  }
+
+  .k-list {
+    font-size: 1em;
+  }
+
+  .btn-kontakt {
+    padding: 10px 60px;
+    font-size: .7rem;
+  }
+
+  .selbs-price {
+    flex-direction: column;
+  }
+
+  .emr-cer {
+    width: 100%;
+  }
+
+  .emr-cer li a h3 {
+    width: 10.8rem;
+    color: #00a9ba;
+    border-bottom: 5px solid #00a9ba;
+    margin-top: 2rem;
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kosten-title {
+    font-size: 2rem;
+  }
+
+  .kosten-container {
+    width: 90vw;
+  }
+
+ .selbs-price li {
+    margin: 0;
+  }
+  .selbs-price span {
+    font-size: 1.2em;
+  }
+
+  .k-list {
+    font-size: .9em;
+  }
+
+  .emr-cer li a h3 {
+    width: 12rem;
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .kosten-title {
+    font-size: 1.8rem;
+  }
+
+  .kosten-container {
+    width: 90vw;
+  }
+
+  .k-list {
+    font-size: .85em;
+  }
+
+  .emr-cer li a h3 {
+    width: 10.6rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .kosten-title {
+    font-size: 1.6rem;
+  }
+
+  .k-list {
+    font-size: .8em;
+  }
+
+  .kosten-container {
+    width: 90vw;
+  }
+}

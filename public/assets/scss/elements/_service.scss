@@ -1,0 +1,381 @@
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+}
+
+.top-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05a8b9;
+    width: 100vw;
+    height: 8rem;
+}
+
+.top-line h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #fff;
+    margin-top: .8rem;
+}
+
+.bottom-line {
+    background-color: #05a8b9;
+    width: 100vw;
+    height: 8rem;
+}
+
+.lymphdrainage{
+    margin-top: 2rem;
+}
+
+.header-title h5 {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: #043052;
+    margin-top: 1.3rem;
+}
+
+.service-title {
+    color: #043052;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.therapy-img-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    padding: 2rem;
+}
+
+.therapy-services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 3rem 5rem;
+}
+
+.therapy-services .lymphdrainage {
+    color: #043052;
+    font-size: 2em;
+}
+
+.therapy-services-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.therapy-services-wrapper div {
+    margin: 0 3.5rem;
+}
+
+.service-line {
+    background-color: #000;
+    width: 100vw;
+    height: 1px;
+    margin-top: 5rem;
+}
+
+.m-lymph {
+  width: 40vw;
+}
+
+.m-lymph h3 {
+ color: #043052;
+}
+
+.mld ul {
+  margin-top: .85rem;
+}
+
+.mld ul li {
+  font-size: 1.2em;
+}
+
+.mld h3 {
+  color: #043052;
+}
+
+.img-s-wrapper {
+    margin: 0 20px;
+    border: 4px solid #043053;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-service {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-position: center;
+    transition: all .5s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.pillars {
+   margin-top: 1rem;
+   display: flex;
+   list-style-type: none;
+   color: #043052;
+   font-weight: bold;
+   margin-left: -50px;
+   font-size: 1.2em;
+}
+
+.pillars li {
+    margin: 0 .5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .therapy-services {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .top-line, .bottom-line {
+        height: 6rem;
+    }
+
+    .top-line h2 {
+        font-size: 2.7em;
+    }
+
+    .therapy-services.lymphdrainage {
+        font-size: 1em;
+    }
+
+    .therapy-services-wrapper {
+        flex-direction: column;
+    }
+
+    .m-lymph, .mld {
+        width: 100%;
+    }
+
+    .m-lymph h3 {
+        font-size: 1.5em;
+
+    }
+    .m-lymph li {
+      font-size: 1.1em;
+      width: 90%;
+    }
+    .pillars {
+        width: 90%;
+    }
+
+    .mld h3 {
+        font-size: 1.5em;
+    }
+    .mld li {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .service-title {
+        margin-top: 5rem;
+    }
+
+    .service-container {
+      height: fit-content;
+      width: 100vw;
+    }
+
+    .therapy-img-wrapper {
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .service-title {
+      font-size: 3em;
+    }
+    .img-service{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        background-position: center;
+    }
+
+    .therapy-services {
+        width: 100%;
+    }
+
+    .m-lymph, .mld {
+        width: 100%;
+    }
+
+    .m-lymph h3 {
+        font-size: 1.2em;
+    }
+    .m-lymph li {
+        font-size: 1em;
+    }
+    .mld h3 {
+        font-size: 1.2em;
+    }
+    .mld ul li {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .img-s-wrapper {
+        margin: 0 5px;
+    }
+    .therapy-img-wrapper {
+        margin-top: 1rem;
+    }
+
+    .img-service{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background-position: center;
+    }
+
+    .top-line, .bottom-line {
+        height: 6rem;
+    }
+
+    .top-line .angebot {
+        font-size: 2.4em;
+    }
+
+    .therapy-services {
+        width: 100%;
+    }
+
+    .m-lymph, .mld {
+        width: 80vw;
+    }
+
+    .m-lymph h3 {
+      font-size: 1.1em;
+    }
+    .m-lymph li {
+        font-size: .8em;
+    }
+
+    .pillars {
+        flex-direction: column;
+    }
+
+    .pillars li {
+      font-size: 1em;
+      margin: 0 .2rem;
+    }
+    .mld h3 {
+        font-size: 1.1em;
+    }
+    .mld li {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .service-title {
+      margin-top: 5rem;
+      font-size: 2.1em;
+    }
+    .img-s-wrapper {
+        margin: 0 3px;
+    }
+
+    .therapy-img-wrapper {
+        margin-top: .8rem;
+    }
+
+    .top-line, .bottom-line {
+        height: 4rem;
+    }
+
+    .top-line .angebot {
+        font-size: 2em;
+    }
+
+    .img-service{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-position: center;
+    }
+
+    .therapy-services {
+        margin-top: 1.8rem;
+     }
+
+     .m-lymph, .mld {
+        width: 80vw;
+    }
+
+    .m-lymph h3 {
+        font-size: 1.1em;
+        width: 80%;
+    }
+    .m-lymph .parag {
+        font-size: 1em;
+    }
+
+    .mld h3 {
+        font-size: 1.1em;
+        margin-top: 1rem;
+    }
+    .mld ul li {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 479px) {
+    .img-service{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background-position: center;
+    }
+
+    .top-line, .bottom-line {
+        height: 3rem;
+    }
+
+    .top-line .angebot {
+        font-size: 1.5em;
+    }
+
+
+    .m-lymph, .mld {
+        width: 80vw;
+    }
+
+    .m-lymph h3 {
+        font-size: 1em;
+    }
+
+    .m-lymph li {
+        font-size: .8em;
+    }
+
+    .mld h3 {
+        font-size: 1em;
+    }
+
+    .mld ul li {
+        font-size: 1em;
+    }
+
+    .pillars {
+        margin-left: 0;
+    }
+
+    .therapy-services {
+      flex-direction: column;
+    }
+}

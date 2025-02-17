@@ -1,0 +1,31 @@
+.footer {
+    background-color: #00a9ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+.footer h5 {
+    color: #424748;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+    .footer {
+        height: auto;
+    }
+    .footer h5 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer h5 {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}

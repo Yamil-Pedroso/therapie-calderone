@@ -1,0 +1,376 @@
+.acp-container {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-top: 3.5rem;
+    height: 65vh;
+}
+
+.acp-content {
+    width: 70rem;
+}
+
+.info-wrapper, .care-img {
+    margin: 0 2rem;
+}
+
+.line2 {
+    background-color: #043052;
+    width: 70px;
+    height: 4px;
+}
+
+.acp-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #043052;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.info-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.acp-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.acp-wrapper h2 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #043052;
+}
+
+.acp-wrapper h2 span {
+    color: #043052;
+}
+
+.acp-wrapper li {
+    margin-top: 0.625rem;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.acp-btn {
+    background-color: #00a9ba;
+    padding: 20px 40px;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 5px;
+    &:hover
+{
+      background-color: #01565e;
+    }
+}
+
+.opt-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.opt-info .ext-link {
+    text-decoration: none;
+    color: #043052;
+    font-size: 1.2em;
+    font-weight: 600;
+    &:hover {
+        color: #00a9ba;
+    }
+}
+
+.care-img {
+    background-image: url("/assets/images/care1.png");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: -.625rem;
+}
+
+.media-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.link-icon {
+    font-size: 2em;
+}
+
+.play-btn {
+   border-radius: 50%;
+   width: 6rem;
+    height: 6rem;
+    background-color: #00a9ba;
+    border: none;
+    text-decoration: none;
+    &:hover {
+        background-color: #01565e;
+        text-decoration: none;
+    }
+}
+
+.faplay-icon {
+    font-size: 1.2em;
+    color: #fff;
+    margin-left: 0.3rem;
+}
+
+.modal-wrapper {
+    background-color: #043053;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    overflow: hidden;
+}
+
+.header-acp-wrapper p {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.modal-container {
+    position: relative;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.video-screen {
+    width: 720px;
+    height: 640px;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+
+.close-wrapper {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.close-icon {
+    font-size: 1.8rem;
+    margin-left: 0.3rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .planning-container {
+        margin-top: 1rem;
+    }
+    .acp-container {
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .acp-title {
+      font-size: 2rem;
+      margin-top: 4rem;
+    }
+
+    .acp-parag {
+        width: 100%;
+    }
+
+    .info-wrapper {
+        width: 95%;
+        height: 100%;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .opt-info {
+        margin-top: 2rem;
+    }
+
+    .acp-content {
+        width: 100%;
+    }
+
+    .care-img {
+      margin-top: 2rem;
+      margin-left: 0;
+      object-fit: cover;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .media-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    .acp-wrapper h2, .acp-wrapper span {
+        font-size: 1.5rem;
+    }
+
+    .acp-btn {
+        font-size: 1rem;
+        padding: 15px 25px;
+    }
+
+    .video-screen {
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .acp-container {
+        width: 90vw;
+    }
+    .acp-wrapper  {
+        width: 100%;
+    }
+    .acp-wrapper p {
+        font-size: 1.1rem;
+    }
+
+    .acp-title {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+      }
+
+    .acp-btn {
+        font-size: 1rem;
+        padding: 15px 25px;
+    }
+    .play-btn {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .info-wrapper {
+        width: 95%;
+        overflow: hidden;
+    }
+
+    .faplay-icon {
+        font-size: 1em;
+    }
+
+    .ext-link {
+        font-size: 1rem;
+    }
+
+    .close-icon {
+        font-size: 1.5rem;
+    }
+
+    .close-wrapper {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-wrapper {
+        width: 92%;
+        overflow: hidden;
+    }
+    .acp-title {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+      }
+
+    .acp-btn {
+        font-size: .9rem;
+        padding: 10px 20px;
+    }
+
+    .acp-wrapper li {
+        font-size: 1.2em;
+    }
+
+    .acp-container {
+        width: 90vw;
+    }
+    .acp-wrapper  {
+        width: 100%;
+    }
+
+    .acp-wrapper h2, .acp-wrapper span {
+        font-size: 1.2rem;
+    }
+
+    .ext-link {
+        font-size: .9rem;
+    }
+
+    .close-icon {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .acp-wrapper li {
+        font-size: 1em;
+        line-height: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .acp-container {
+        width: 90vw;
+    }
+    .acp-wrapper  {
+        width: 100%;
+    }
+
+    .acp-title {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+
+    .acp-btn {
+        font-size: .8rem;
+        padding: 10px 20px;
+    }
+
+    .acp-wrapper h2, .acp-wrapper span {
+        font-size: 1rem;
+    }
+
+    .ext-link {
+        font-size: .8rem;
+    }
+
+    .close-icon {
+        font-size: 1rem;
+    }
+}
