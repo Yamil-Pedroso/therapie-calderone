@@ -17,8 +17,8 @@ const Kosten = () => {
             </div>
             <div className="bar-twint">
               <ul>
-                <li>CHF 35 /15 Min.</li>
-                <li>CHF 140 /60 Min.</li>
+                <li>CHF 35 /15min.</li>
+                <li>CHF 140 /60min.</li>
               </ul>
             </div>
             <div className="m-lymph">
@@ -41,7 +41,7 @@ const Kosten = () => {
             <div className="acp-beratung">
               <h3>ACP- Beratung (gesundheitliche Vorausplanung)</h3>
               <ul>
-                <li>CHF 140 /60 Min. (max. CHF 500)</li>
+                <li>CHF 80.-/60min (max. CHF 240.-)</li>
               </ul>
             </div>
             <div className="emr-cer">

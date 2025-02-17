@@ -33,7 +33,7 @@ const Contact = () => {
             {contact.email}
           </a>
         </h3>
-        <ul className="dom-behandlung">
+        {/*<ul className="dom-behandlung">
           <li>
             <h3>{contact.dom_behandlung}</h3>
           </li>
@@ -49,7 +49,7 @@ const Contact = () => {
           <li>
             <h3>Adresse: {contact.address2}</h3>
           </li>
-        </ul>
+        </ul>*/}
       </div>
     </div>
   )

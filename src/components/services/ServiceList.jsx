@@ -66,14 +66,14 @@ class TherapyServices extends Component {
                   <li>Bewegung</li>
                   <li>Selbstmanagement</li>
                 </ul>
-                <Link
+                {/*<Link
                   to={linkBtn.link}
                   target="_blank"
                   className="btn btn-flyer"
                   style={{ color: '#fff', marginTop: '2rem' }}
                 >
                   <p>{linkBtn.text}</p>
-                </Link>
+                </Link>*/}
               </ul>
             </div>
             <div className="mld">
